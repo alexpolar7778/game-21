@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background-size: cover;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+h1 {
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.scores {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-image {
+  width: 100px;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+  display: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+#message {
+  color: #27ae60;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}

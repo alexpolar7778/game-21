@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гра 21</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Гра 21</h1>
+    <div id="user-name">Гравець</div>
+    <div class="scores">
+      <div>Очки гравця: <span id="user-score">0</span></div>
+      <div>Очки комп'ютера: <span id="computer-score">0</span></div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        Карта гравця: <span id="user-number">-</span>
+        <img id="user-card" class="card-image" src="" alt="Карта гравця">
+      </div>
+      <div class="card-container">
+        Карта комп'ютера: <span id="computer-number">-</span>
+        <img id="computer-card" class="card-image" src="" alt="Карта комп'ютера">
+      </div>
+    </div>
+    <button id="generate">Грати</button>
+    <div id="message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
